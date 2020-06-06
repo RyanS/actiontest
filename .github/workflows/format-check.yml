@@ -41,7 +41,7 @@ jobs:
           ${{ runner.os }}-
     - name: Install dependencies
       run: |
-        npm install --no-save eslint prettier
+        npm install --no-save --prefer-offline eslint prettier
     - name: Lint
       run: npm run eslint -s
     - name: Prettier
